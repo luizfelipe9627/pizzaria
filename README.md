@@ -1,4 +1,4 @@
-# Medcenter
+# Pizzaria JS
 ![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=blue&style=for-the-badge)             
 
 <img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/images/pizzaria.png" alt="Site">
