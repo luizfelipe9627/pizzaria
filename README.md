@@ -7,7 +7,7 @@
 Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente comprar, maior vai ser o desconto de 10% recebido.
 Resposivo para tablet, desktop e mobile.
 
-## <a href="https://luizfelipe9627.github.io/pizzaria-javascript">Acesse o site</a>
+## <a href="https://luizfelipe9627.github.io/pizzaria">Acesse o site</a>
 
 ## ✔️ Tecnologias utilizadas
 
