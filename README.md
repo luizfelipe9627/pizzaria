@@ -5,7 +5,8 @@
 
 ## 📄 Resumo
 Nesse primeiro projeto web usando JavaScript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas práticar e aplicar o conhecimento absorvido em aulas.
-<br>
+
+## 📑 Observação
 Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente comprar, maior vai ser o desconto de 10% recebido.
 Resposivo para tablet, desktop e mobile.
 
@@ -17,7 +18,7 @@ Resposivo para tablet, desktop e mobile.
 - ``CSS3``
 - ``JavaScript``
 
-## 😄 Me siga nas redes sociais<br>
+## 📷 Me siga nas redes sociais<br>
 
 <p align="left">
   <a href="https://www.linkedin.com/in/luizfelipe9627/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
