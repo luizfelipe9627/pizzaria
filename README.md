@@ -3,7 +3,7 @@
 
 <img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/images/pizzaria.png" alt="Site">
 
-## 📄 Resumo
+## 📄 Descrição
 Nesse primeiro projeto web usando JavaScript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas práticar e aplicar o conhecimento absorvido em aulas.
 
 ## 📑 Observação
