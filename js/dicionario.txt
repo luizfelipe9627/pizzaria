@@ -1,0 +1,7 @@
+Dicionario de Códigos:
+
+- O querySelector() é usado para selecionar elementos HTML com base no id, classes, tipos, atributos, valores de atributos, etc. 
+
+- O cloneNode() é usado para recriar algo, no caso como o proprio nome já diz, clonar.
+
+- O append() é usado para adicionar mais um conteudo alem do que ele está recebendo.
