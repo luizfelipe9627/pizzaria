@@ -1,7 +1,7 @@
 # Pizzaria JS
-![Badge](https://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=blue&style=for-the-badge)             
+![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
-<img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/assets/images/pizzaria.png" alt="Site">
+<img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/assets/videos/pizzaria.gif" alt="Site">
 
 ## 📄 Descrição
 Nesse primeiro projeto web usando JavaScript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas práticar e aplicar o conhecimento absorvido sobre Javascript em aulas. Está resposivo para tablet, desktop e smartphone.
