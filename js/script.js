@@ -63,7 +63,7 @@ pizzaJson.map( (item, index) => {
        qSA('.pizzaInfo--size').forEach((size, sizeIndex) => {
             size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
             
-            // Usado para selecionar o tamanho grande.
+            // Usado para selecionar o tamanho grande como padrão.
             if(sizeIndex == 2) {
                 size.classList.add('selected')
             }
@@ -138,9 +138,115 @@ qS('.pizzaInfo--addButton').addEventListener('click', () => {
         qt:modalQt
         });
     }
-
+    updateCart();
     closeModal();
 });
+
+// Quando escolher uma pizza e apertar no carrinho ele irá abrir o carrinho com todas as infos da pizza.
+qS('.menu-openner').addEventListener('click', () => {
+    if(cart.length > 0) {
+        qS('aside').style.left = '0';
+    }
+});
+
+// Quando cliar no "X" dentro do carrinho ele vai fechar o carrinho.
+qS('.menu-closer').addEventListener('click', () => {
+    qS('aside').style.left = '100vw'
+});
+
+// Responsavel por atualizar e mostrar/abrir o carrinho.
+function updateCart() {
+    // Está atualizando o carrinho no mobile.
+    qS('.menu-openner span').innerHTML = cart.length;
+
+    if(cart.length > 0) {
+        qS('aside').classList.add('show');
+
+        // Zera a listagem das pizzas.
+        qS('.cart').innerHTML = '';
+
+        // Definindo o subtotal, desconto e total com o valor zerado.
+        let subtotal = 0;
+        let desconto = 0;
+        let total = 0;
+
+        // Pega item por item para exibir na tela do carrinho.
+        for(let i in cart) {
+            let pizzaItem = pizzaJson.find((item) => item.id == cart[i].id);
+            subtotal += pizzaItem.price * cart[i].qt;
+
+            // Responsavel por adicionar o tamanho da
+            let pizzaSizeName;
+            if (cart[i].size == 0) {
+                pizzaSizeName = "P";
+            }
+
+            if (cart[i].size == 1) {
+                pizzaSizeName = "M";
+            }
+
+            if (cart[i].size == 2) {
+                pizzaSizeName = "G";
+            }
+    
+            // Preenche os itens do carrinho clonando o cart-item.
+            let cartItem = qS('.models .cart--item').cloneNode(true);
+            
+            // Exibe as informações na tela.
+            qS('.cart').append(cartItem);
+
+            // Coloca a imagem da pizza.
+            cartItem.querySelector('img').src = pizzaItem.img;
+        
+            // Responsavel pela quantidade de pizza escolhida.
+            cartItem.querySelector('.cart--item--qt').innerHTML = cart[i].qt;
+
+            // Responsavel por concatenar o nome da pizza com o tamanho.
+            let pizzaName = `${pizzaItem.name} (${pizzaSizeName})`;
+
+            // Coloca o nome da pizza no titulo.
+            cartItem.querySelector('.cart--item-nome').innerHTML = pizzaName;
+
+            // Responsavel por adicionar mais pizzas.
+            cartItem.querySelector('.cart--item-qtmais').addEventListener('click', () => {
+                cart[i].qt++;
+                updateCart();
+            });
+
+            // Responsavel por diminuir a quantidade de pizzas.
+            cartItem.querySelector('.cart--item-qtmenos').addEventListener('click', () => {
+                if (cart[i].qt > 1)  {
+                    cart[i].qt--;
+                } else {
+                    cart.splice(i, 1);
+                }
+                updateCart()
+            });
+
+            // Fazendo a conta do desconto e subtotal.
+            desconto = subtotal * 0.1;
+
+            // Fazendo a conta do total.
+            total = subtotal - desconto;
+
+            // Responsavel por mostrar o subtotal.
+            qS('.subtotal span:last-child').innerHTML = `R$ ${subtotal.toFixed(2)}`;
+            // Responsavel por mostrar o desconto.
+            qS('.desconto span:last-child').innerHTML = `R$ ${desconto.toFixed(2)}`;
+
+            // Responsavel por mostrar o total.
+            qS('.total span:last-child').innerHTML = `R$ ${total.toFixed(2)}`;
+        }
+    } else {
+        // Quando tiver "0" pizzas ele vai fechar o carrinho no desktop. 
+        qS('aside').classList.remove('show');
+        // Quando tiver "0" pizzas ele vai fechar o carrinho no mobile.
+        qS('aside').style.left = '100vw'
+    }
+}
+
+
+
 
 
 
