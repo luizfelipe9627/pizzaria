@@ -4,10 +4,10 @@
 <img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/assets/videos/pizzaria.gif" alt="Site">
 
 ## 📄 Descrição
-Nesse primeiro projeto web usando JavaScript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas práticar e aplicar o conhecimento absorvido sobre Javascript em aulas. Está resposivo para tablet, desktop e smartphone.
+Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente comprar, maior vai ser o desconto de 10% recebido.
 
 ## 📑 Observação
-Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente comprar, maior vai ser o desconto de 10% recebido.
+Nesse primeiro projeto web usando JavaScript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas práticar e aplicar o conhecimento absorvido sobre Javascript em aulas. Está resposivo para tablet, desktop e smartphone.
 
 ### <a href="https://luizfelipe9627.github.io/pizzaria">Acesse o site</a>
 
