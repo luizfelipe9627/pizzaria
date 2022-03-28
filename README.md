@@ -16,6 +16,21 @@ Nesse primeiro projeto web usando JavaScript foi mais para botar em prática tod
 - ``HTML5``
 - ``CSS3``
 - ``JavaScript``
+- 
+## 🧑‍💻 Criador
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/luizfelipe9627">
+        <img src="https://github.com/luizfelipe9627.png" width="100px;" alt="Foto de Luiz Felipe Silva no GitHub"/><br>
+        <sub>
+          <b>Luiz Felipe Silva</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## 📷 Me siga nas redes sociais<br>
 
