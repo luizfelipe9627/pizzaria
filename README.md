@@ -1,15 +1,15 @@
 # Pizzaria JS
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
-<img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/assets/videos/pizzaria.gif" alt="Site">
+<img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/assets/video/pizzaria.gif" alt="Site">
 
 ## 📄 Descrição
-Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente comprar, maior vai ser o desconto de 10% recebido.
+Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente adicionar ao carrinho maior vai ser o desconto de 10% recebido.
 
 ## 📑 Observação
-Nesse primeiro projeto web usando JavaScript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas práticar e aplicar o conhecimento absorvido sobre Javascript em aulas. Está resposivo para tablet, desktop e smartphone.
+Nesse projeto usando Javascript foi mais para botar em prática toda a aula aplicada sobre JS. O layout já estava pronto, o intuito principal foi apenas praticar e aplicar o conhecimento absorvido sobre Javascript em aulas. Está responsivo para tablet, desktop e smartphone.
 
-### <a href="https://luizfelipe9627.github.io/pizzaria">Acesse o site</a>
+### <a href="https://luizfelipe9627-pizzaria.netlify.app">Acesse o site</a>
 
 ## 💻 Tecnologias utilizadas
 
