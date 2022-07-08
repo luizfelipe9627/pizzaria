@@ -1,0 +1,89 @@
+.cart--area {
+  padding: 1.25rem;
+}
+
+.cart {
+  margin-bottom: 1.25rem;
+}
+
+.cart--item {
+  display: flex;
+  align-items: center;
+  margin: 0.625rem 0;
+}
+
+.cart--item img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.25rem;
+}
+
+.cart--item-nome {
+  flex:1;
+}
+
+.cart--item--qtarea {
+  display: inline-flex;
+  background-color:#EEE;
+  border-radius: 0.625rem;
+  height: 1.875rem;
+}
+
+.cart--item--qtarea button {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.0625rem;
+  outline: 0;
+  cursor: pointer;
+  padding: 0rem 0.625rem;
+  color: #333;
+}
+
+.cart--item--qt {
+  line-height: 1.875rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0rem 0.3125rem;
+  color: #000;
+}
+
+.cart--totalitem {
+  padding: 0.9375rem 0;
+  border-top: 0.0625rem solid #79b9dd;
+  color: #315970;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9375rem;
+}
+
+.cart--totalitem span:first-child {
+  font-weight: bold;
+}
+
+.cart--totalitem.big {
+  font-size: 1.25rem;
+  color:#000;
+  font-weight: bold;
+}
+
+.cart--finalizar {
+  padding: 1.25rem 1.875rem;
+  border-radius: 1.25rem;
+  background-color: #48d05f;
+  color:#FFF;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1.25rem;
+  border: 0.125rem solid #63f77c;
+  transition: all ease .2s;
+}
+
+.cart--finalizar:hover {
+  background-color: #35af4a;
+}
+
+@media (max-width: 840px) {
+  .cart--area {
+    width: 100vw;
+  }
+}

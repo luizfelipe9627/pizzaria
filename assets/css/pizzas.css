@@ -1,0 +1,299 @@
+.pizza-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pizza-item {
+  text-align: center;
+  max-width: 15.625rem;
+  font-family: 'Hepta Slab', Helvetica, Arial;
+  margin: 0 auto 3.125rem auto;
+}
+
+.pizza-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.pizza-item--img {
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color:#EEE;
+  border-radius: 6.25rem;
+  box-shadow: 0rem 0.625rem 3.125rem rgba(0, 0, 0, 0.2);
+}
+
+.pizza-item--img img {
+  width: 100%;
+  height: auto;
+}
+
+.pizza-item--add {
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  border-radius: 1.5625rem;
+  background-color:#388bc5;
+  text-align: center;
+  color:#FFF;
+  font-size: 1.375rem;
+  cursor: pointer;
+  margin-top: -1.5625rem;
+  transition: all ease .2s;
+}
+
+.pizza-item a:hover .pizza-item--add {
+  background-color:#244c88;
+}
+
+.pizza-item--price {
+  font-size: 0.9375rem;
+  color:#333;
+  margin-top: 0.3125rem;
+}
+
+.pizza-item--name {
+  font-size: 1.25rem;
+  font-weight:  bold;
+  color:#000;
+  margin-top: 0.3125rem;
+}
+
+.pizza-item--desc {
+  font-size: 0.8125rem;
+  color:#555;
+  margin-top: 0.625rem;
+}
+
+.pizzaWindowArea {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color:rgba(255, 255, 255, 0.5);
+  display: none;
+  transition: all ease .5s;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.pizzaWindowBody {
+  width: 56.25rem;
+  background-color:#FFF;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0rem 0.9375rem #999;
+  display: flex;
+  margin: 1.25rem 0rem;
+}
+
+.pizzaBig {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizzaBig--back {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color:#000;
+}
+
+.pizzaBig img {
+  height: 25rem;
+  width: auto;
+}
+
+.pizzaInfo {
+  flex: 1;
+  font-family: 'Hepta Slab', Helvetica, Arial;
+  padding-bottom: 3.125rem;
+}
+
+.pizzaInfo h1 {
+  margin-top: 3.125rem;
+}
+
+.pizzaInfo .pizzaInfo--desc {
+  font-size: 0.9375rem;
+  color:#999;
+  margin-top: 0.625rem;
+  font-family: 'Lato',Helvetica,Arial;
+}
+
+.pizzaInfo--sector {
+  color:#CCC;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.pizzaInfo--sizes {
+  display: inline-flex;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.pizzaInfo--size {
+  padding: 0.625rem 0.9375rem;
+  color:#000;
+  background-color:#EEE;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pizzaInfo--size:hover {
+  background-color:#CCC;
+}
+
+.pizzaInfo--size.selected {
+  background-color:#399ade;
+  color:#FFF;
+}
+
+.pizzaInfo--size.selected span {
+  color:#D6D6D6;
+}
+
+.pizzaInfo--size span {
+  font-size: 0.75rem;
+  color:#999;
+  font-weight: normal;
+}
+
+.pizzaInfo--price {
+  display: flex;
+  align-items: center;
+}
+
+.pizzaInfo--actualPrice {
+  font-size: 1.75rem;
+  margin-right: 1.875rem;
+}
+
+.pizzaInfo--qtarea {
+  display: inline-flex;
+  background-color:#EEE;
+  border-radius: 0.625rem;
+  height: 1.875rem;
+}
+
+.pizzaInfo--qtarea button {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.0625rem;
+  outline: 0;
+  cursor: pointer;
+  padding: 0rem 0.625rem;
+  color:#333;
+}
+
+.pizzaInfo--qt {
+  line-height: 1.875rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0rem 0.3125rem;
+  color:#000;
+}
+
+.pizzaInfo--addButton {
+  margin-top: 1.875rem;
+  padding: 1.25rem 1.875rem;
+  border-radius: 1.25rem;
+  background-color:#48d05f;
+  color:#FFF;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 1.875rem;
+}
+
+.pizzaInfo--addButton:hover {
+  background-color:#32a345;
+}
+
+.pizzaInfo--cancelButton {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pizzaInfo--cancelMobileButton {
+  display: none;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-bottom: 1.875rem;
+}
+
+@media (max-width:1000px) {
+  .pizza-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:840px) {
+  .pizza-area {
+    display: block;
+  }
+
+  .pizza-item {
+    max-width: 100%;
+  }
+  .pizzaWindowArea {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+  .pizzaWindowBody {
+    width: 100vw;
+    display: block;
+    padding: 1.25rem;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .pizzaBig img {
+    width: 75%;
+    height: auto;
+  }
+
+  .pizzaInfo h1 {
+    margin-top: 1.25rem;
+  }
+
+  .pizzaInfo--qtarea {
+    height: 3.75rem;
+  }
+
+  .pizzaInfo--qtarea button {
+    font-size: 1.5625rem;
+    padding: 0rem 1.5625rem;
+  }
+
+  .pizzaInfo--qt {
+    line-height: 3.75rem;
+    font-size: 1.25rem;
+  }
+
+  .pizzaInfo--addButton {
+    font-size: 1.25rem;
+    display: block;
+    text-align: center;
+    margin: 1.875rem auto;
+  }
+
+  .pizzaInfo--cancelButton {
+    display: none;
+  }
+
+  .pizzaInfo--cancelMobileButton {
+    display: block;
+  }
+}

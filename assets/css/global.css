@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#EEE;
+  font-family: 'Lato',Helvetica,Arial;
+  font-size: 0.9375rem;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+}
+
+aside {
+  background-color:#9ccbe6;
+  width: 0vw;
+  font-family: 'Hepta Slab', Helvetica, Arial;
+  transition: all ease .2s;
+  overflow-x: hidden;
+}
+
+aside.show {
+  width: 30vw;
+}
+
+main {
+  flex: 1;
+  padding: 1.25rem;
+}
+
+h1 {
+  font-family: 'Hepta Slab', Helvetica, Arial;
+}
+
+@media (max-width: 840px) {
+  body {
+    flex-direction: column;
+  }
+
+    header {
+      display: flex;
+    }
+
+  main {
+    padding-top: 3.75rem;
+  }
+
+  aside {
+    width: auto;
+    position: fixed;
+    left: 100vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease .2s;
+  }
+
+  aside.show {
+    width: auto;
+  }
+}
