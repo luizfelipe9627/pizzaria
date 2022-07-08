@@ -19,6 +19,18 @@ aside {
   overflow-x: hidden;
 }
 
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 3.75rem;
+  background-color:#399ade;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 aside.show {
   width: 30vw;
 }
@@ -41,18 +53,18 @@ h1 {
       display: flex;
     }
 
-  main {
-    padding-top: 3.75rem;
-  }
+    main {
+      padding-top: 3.75rem;
+    }
 
-  aside {
-    width: auto;
-    position: fixed;
-    left: 100vw;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: all ease .2s;
+    aside {
+      width: auto;
+      position: fixed;
+      left: 100vw;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: all ease .2s;
   }
 
   aside.show {

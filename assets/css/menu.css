@@ -2,18 +2,6 @@
   display: none;
 }
 
-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 3.75rem;
-  background-color:#399ade;
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .menu-openner {
   margin-right: 0.9375rem;
   font-size: 1.625rem;
