@@ -1,7 +1,7 @@
 # Pizzaria
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
-<img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/master/assets/video/pizzaria.gif" alt="Site">
+<img src="https://github.com/luizfelipe9627/pizzaria-javascript/blob/main/assets/video/pizzaria.gif" alt="Site">
 
 ## 📄 Descrição
 Uma pizzaria, na qual o cliente consegue escolher a quantidade e o tamanho de pizza desejada, conforme for escolhendo a pizza aparece o carrinho somando todos os valores, quanto mais pizza o cliente adicionar ao carrinho maior vai ser o desconto de 10% recebido.
